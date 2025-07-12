@@ -1,0 +1,95 @@
+##############
+# BACKEND - JAVA
+##############
+
+# Maven
+target/
+*.log
+
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+gradle-app.setting
+
+# Temporary configuration files
+*.class
+*.jar
+*.war
+*.ear
+*.iml
+
+##############
+# FRONTEND - ANGULAR
+##############
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.package-lock.json
+.angular/
+.angular-cache/
+
+# Builds
+dist/
+out-tsc/
+coverage/
+
+##############
+# SYSTEM
+##############
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+##############
+# IDEs
+##############
+
+# VSCode
+.vscode/
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Others
+*.sublime-workspace
+*.sublime-project
+
+##############
+# GENERAL
+##############
+
+# Logs and temporary files
+*.tmp
+*.bak
+*.swp
+*.swo
+*.~ 
+*.backup
+
+# Environment files
+.env
+.env.*
+
+# Lock files (optional)
+# If you want to ensure consistency across environments, keep the lock files.
+# Otherwise, you can uncomment the lines below to ignore.
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# Local build directories
+bin/
+out/
