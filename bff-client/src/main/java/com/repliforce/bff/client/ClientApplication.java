@@ -1,11 +1,12 @@
-package com.repliforce;
+package com.repliforce.bff.client;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class App {
+public class ClientApplication {
+
     public static void main(String[] args) {
-        SpringApplication.run(App.class, args);
+        SpringApplication.run(ClientApplication.class, args);
     }
 }
