@@ -3,21 +3,22 @@ package com.repliforce.bff.client.model;
 import lombok.Data;
 
 import javax.persistence.*;
-import java.time.LocalDate;
 
 @Entity
 @Data
-public class Client {
+public class Service {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     @Column(nullable = false, length = 150)
-    private String name;
+    private String description;
 
-    @Column(nullable = false, unique = true, length = 11)
-    private String cpf;
+    @ManyToOne
+    @JoinColumn(name = "client_id")
+    private Client client;
 
-    @Column(name = "registered_at")
-    private LocalDate registeredAt;
+    @Column
+    private Double price;
 }
