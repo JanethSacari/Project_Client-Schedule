@@ -1,4 +1,4 @@
-package com.repliforce.bff.client.model;
+package com.repliforce.bff.client.model.entity;
 
 import lombok.Data;
 
