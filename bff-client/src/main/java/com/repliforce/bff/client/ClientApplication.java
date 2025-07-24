@@ -16,7 +16,7 @@ public class ClientApplication {
         return args -> {
             Client client = Client.builder()
                     .name("X")
-                    .cpf("0000000000000")
+                    .cpf("12345678901")
                     .build();
             clientRepository.save(client);
         };

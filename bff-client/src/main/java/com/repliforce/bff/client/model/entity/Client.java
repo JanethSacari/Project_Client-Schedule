@@ -26,4 +26,9 @@ public class Client {
 
     @Column(name = "registered_at")
     private LocalDate registeredAt;
+
+    @PrePersist
+    public void prePersist() {
+        this.registeredAt = LocalDate.now();
+    }
 }
